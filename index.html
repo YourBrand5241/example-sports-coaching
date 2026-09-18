@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sports Coach Example | Booking Demo</title>
+<title>Sports Coach Example | Home</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,58 +16,30 @@
       </div>
       <p class="tagline">Example booking site — coaching &amp; party packages</p>
       <p class="hours-line">This is a demo build — not a real business.</p>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="booking.html">Book Now</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="page">
-
-    <section class="products-section">
-      <h2>Coaching Sessions</h2>
-      <div id="list-coaching" class="product-grid"></div>
-
-      <h2 class="section-spacer">Birthday Party Packages</h2>
-      <div id="list-parties" class="product-grid"></div>
-    </section>
-
-    <aside class="basket-panel">
-      <h2>Your Booking</h2>
-      <div id="basket-items" class="basket-items">
-        <p class="empty-basket">Nothing added yet</p>
-      </div>
-
-      <div class="basket-total-row">
-        <span>Total</span>
-        <span id="basket-total">£0.00</span>
-      </div>
-
-      <div class="slot-picker">
-        <label for="customer-name">Your name</label>
-        <input type="text" id="customer-name" placeholder="Full name">
-        <label for="booking-date">Choose a date</label>
-        <input type="date" id="booking-date">
-        <label for="time-slot">Choose a time</label>
-        <select id="time-slot">
-          <option>3:00 PM</option>
-          <option>4:00 PM</option>
-          <option>5:00 PM</option>
-          <option>6:00 PM</option>
-          <option>7:00 PM</option>
-        </select>
-      </div>
-
-      <button id="checkout-btn" class="checkout-btn" disabled>Confirm &amp; Pay</button>
-    </aside>
-
-  </main>
-
-  <div id="confirmation-overlay" class="overlay hidden">
-    <div class="confirmation-box">
-      <h3>Booking received!</h3>
-      <p>This is an example only — no real booking has been made. This shows how a parent's confirmation would look on a live site, with different diaries for weekday coaching and weekend parties.</p>
-      <button id="close-overlay" class="checkout-btn">Close</button>
-    </div>
+  <div class="stats-bar">
+    <div class="stat-block"><span class="stat-num">500+</span><span class="stat-label">Sessions Coached</span></div>
+    <div class="stat-block"><span class="stat-num">40+</span><span class="stat-label">Parties Hosted</span></div>
+    <div class="stat-block"><span class="stat-num">5★</span><span class="stat-label">Average Rating</span></div>
   </div>
 
-  <script src="script.js"></script>
+  <main class="banner-hero">
+    <h1>Coaching sessions &amp; birthday parties, sorted online</h1>
+    <p>A bold, stats-led layout — good for a coach, trainer, or team-based business wanting to lead with energy and credibility before the details.</p>
+    <a href="booking.html" class="cta-btn">See Sessions &amp; Packages</a>
+  </main>
+
+  <footer class="site-footer">
+    <p>Example site by <a href="https://yourbrand5241.netlify.app" target="_blank" rel="noopener">YourBrand</a></p>
+  </footer>
+
 </body>
 </html>

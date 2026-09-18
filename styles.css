@@ -240,3 +240,109 @@ h2 {
 
 .confirmation-box h3 { margin-top: 0; color: var(--brand-dark); }
 .confirmation-box p { color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+.site-nav {
+  margin-top: 14px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+}
+
+.site-nav a.active { background: rgba(255,255,255,0.92); color: var(--brand-dark); }
+
+.stats-bar {
+  background: var(--text);
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 24px 20px;
+  flex-wrap: wrap;
+}
+
+.stat-block { text-align: center; }
+.stat-num { display: block; font-size: 26px; font-weight: 800; color: var(--accent); }
+.stat-label { display: block; font-size: 12px; opacity: 0.85; margin-top: 4px; }
+
+.banner-hero {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.banner-hero h1 { font-size: 30px; margin: 0 0 14px; }
+.banner-hero p { color: var(--muted); font-size: 15px; line-height: 1.6; margin: 0 0 26px; }
+
+.cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 10px;
+}
+
+.cta-btn:hover { background: #c2570c; }
+
+.feed-page {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feed-tile {
+  height: 280px;
+  background: linear-gradient(135deg, #dde8ff, #c2d4ff);
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.page-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.cta-contact {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.cta-contact h1 { font-size: 24px; margin: 0 0 12px; }
+.cta-contact p { color: var(--muted); font-size: 15px; margin: 0 0 22px; }
+
+.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer a { color: var(--brand); font-weight: 600; text-decoration: none; }
